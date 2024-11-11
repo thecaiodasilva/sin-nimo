@@ -45,6 +45,17 @@ let currentScore = 0;
 let timer = 180;  // Tempo total do jogo em segundos
 let interval;
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const synonymInput = document.getElementById('synonym-input');
+
+    synonymInput.addEventListener('keypress', (event) => {
+        if (event.key === 'Enter') {
+            submitSynonym();
+        }
+    });
+});
+
 // Função para iniciar o jogo
 function startGame() {
     // Ocultar título e botão de iniciar, mostrar conteúdo do jogo
@@ -90,15 +101,6 @@ function loadNewWord() {
 }
 
 // Função para verificar o sinônimo
-
-const synonymInput = document.getElementById('synonym-input');
-
-  synonymInput.addEventListener('keypress', (event) => {
-    if (event.key === 'Enter') {
-      submitSynonym();
-    }
-  });
-
 
 
 function submitSynonym() {
