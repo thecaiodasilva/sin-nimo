@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+p{
+    color: rgb(214, 214, 250);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active,
+.screen:not(.hidden) {
+    display: block;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    align-items:center;
+    justify-items: center;
+}
+
+input {
+    padding: 16px;
+    font-size: 16px;
+    margin: 10px 0;
+    align-items: center;
+    justify-items: center;
+}
+
+#feedback {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
