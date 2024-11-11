@@ -90,6 +90,17 @@ function loadNewWord() {
 }
 
 // Função para verificar o sinônimo
+
+const synonymInput = document.getElementById('synonym-input');
+
+  synonymInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+      submitSynonym();
+    }
+  });
+
+
+
 function submitSynonym() {
     const synonym = document.getElementById('synonym-input').value.toLowerCase();
     const currentWord = words[currentLevel][currentWordIndex];
